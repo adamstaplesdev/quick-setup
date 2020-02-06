@@ -33,7 +33,7 @@ echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 
 echo "----- Installing .NET Core ${NET_CORE_VER} sdk and Amazon.Lambda.Tools"
-sudo apt-get install dotnet-sdk-${NET_CORE_VER}
+sudo apt install dotnet-sdk-${NET_CORE_VER}
 dotnet new -i 'Amazon.Lambda.Templates::*'
 
 echo "----- Installing Terraform ${TER_VER}"
@@ -46,9 +46,7 @@ snap install multipass --classic
 
 echo '----- Loading newly-created environment variables, and cleaning up unused packages'
 source ~/.bashrc
-sudo apt-get update
-sudo apt-get autoremove
+sudo apt update
+sudo apt autoremove
 
-echo '----- Next Steps:'
-echo 'Set name and email for git, see https://confluence.atlassian.com/bitbucket/configure-your-dvcs-username-for-commits-950301867.html'
-echo 'Set up aws mfa credentials, see https://github.com/broamski/aws-mfa'
+echo '----- Core tools setup complete.'

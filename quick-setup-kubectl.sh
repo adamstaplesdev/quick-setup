@@ -1,5 +1,5 @@
 #!/bin/sh
-# Linux development environment setup for kubernetes.
+# Linux development environment setup for kubectl and kops.
 
 # Variables to define tool versions
 KUBECTL_VER=`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`
@@ -18,8 +18,6 @@ echo 'alias k=kubectl' >> ~/.bashrc
 curl -Lo ${TEMPDIR}/kops https://github.com/kubernetes/kops/releases/download/${KOPS_VER}/kops-linux-amd64
 chmod +x ${TEMPDIR}/kops
 sudo mv ${TEMPDIR}/kops /usr/local/bin/
-
-echo '----- Loading newly-created environment variables, and cleaning up unused packages'
 source ~/.bashrc
-sudo apt-get update
-sudo apt-get autoremove
+
+echo '----- kubectl/kops setup complete.'

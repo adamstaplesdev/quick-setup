@@ -13,7 +13,7 @@
 
 - Docker CE
 
-## Included tools in quick-setup-k8s.sh
+## Included tools in quick-setup-kubectl.sh
 
 - kubectl
 - kops
@@ -26,7 +26,7 @@ quick-setup-config-aws.sh - set these temporary environment variables before run
 - export AWS_SECRET_ACCESS_KEY=?
 - export AWS_MFA_DEVICE=?
 
-quick-setup-config-k8s.sh - set these temporary environment variables before running
+quick-setup-config-kubectl.sh - set these temporary environment variables before running
 
 - export KOPS_STATE_STORE=?
 - export KOPS_STATE_FILE=?

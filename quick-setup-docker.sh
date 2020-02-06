@@ -14,12 +14,9 @@ sudo apt update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add –
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu ${DOCKER_LTS} stable"
-sudo apt-get update
-sudo apt-get install docker-ce
+sudo apt update
+sudo apt install docker-ce
 sudo systemctl start docker
 sudo systemctl enable docker
 
-echo '----- Loading newly-created environment variables and aliases, and cleaning up unused packages'
-source ~/.bashrc
-sudo apt-get update
-sudo apt-get autoremove
+echo '----- Docker setup complete.'

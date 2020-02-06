@@ -10,3 +10,5 @@ echo '[default-long-term]' >> ~/.aws/credentials
 echo "aws_mfa_device = ${AWS_MFA_DEVICE}" >> ~/.aws/credentials
 echo "aws_access_key_id = ${AWS_ACCESS_KEY_ID}" >> ~/.aws/credentials
 echo "aws_secret_access_key = ${AWS_SECRET_ACCESS_KEY}" >> ~/.aws/credentials
+
+echo '----- Aws mfa configuration complete.'
