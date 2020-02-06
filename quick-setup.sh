@@ -7,7 +7,7 @@ TEMPDIR=~/Downloads/quick-setup
 mkdir -p $TEMPDIR
 
 # Setup common necessary apt packages
-echo ----- Updating apt repositories
+echo ----- Updating apt repositories and installing common build tools
 sudo apt update
 sudo apt install -y build-essential
 
