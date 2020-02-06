@@ -2,5 +2,6 @@
 
 ## Included libraries / languages
 
-- Go 1.13.7
-- Python 3.6 and pip
+- go 1.13.7
+- python 3.6 and pip
+- aws-cli and aws-mfa
