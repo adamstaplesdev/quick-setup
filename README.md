@@ -2,9 +2,10 @@
 
 ## Included libraries / languages in quick-setup-core.sh
 
-- go 1.13.7
 - python 3.6 and pip
+- Node.js 13.x (includes npm)
 - aws-cli and aws-mfa
+- go 1.13.7
 - dotnet-sdk-3.1 and Amazon.Lambda.Tools
 - terraform 0.12.20
 - multipass

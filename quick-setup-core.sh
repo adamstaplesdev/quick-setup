@@ -2,6 +2,7 @@
 # Linux development environment setup for programming languages, sdks, and packages
 
 # Variables to define tool versions
+NODE_VER=13.x
 GO_VER=1.13.7
 TER_VER=0.12.20
 NET_CORE_VER=3.1
@@ -20,6 +21,10 @@ sudo apt install -y build-essential git apt-transport-https ca-certificates curl
 echo '----- Installing python3 and pip3'
 sudo apt install -y python3
 sudo apt install -y python3-pip
+
+echo "----- Installing Node.js ${NODE_VER} (includes npm)"
+curl -sL https://deb.nodesource.com/setup_${NODE_VER} | sudo -E bash -
+sudo apt-get install -y nodejs
 
 echo '----- Installing aws-cli and aws-mfa, see https://github.com/broamski/aws-mfa for help setting up ~/.aws/credentials for mfa'
 pip3 install awscli --upgrade --user
