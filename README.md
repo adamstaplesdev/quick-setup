@@ -8,6 +8,7 @@
 - aws-cli and aws-mfa
 - go 1.13.7
 - dotnet-sdk-3.1 and Amazon.Lambda.Tools
+- Powershell (pwsh)
 - terraform 0.12.20
 - multipass
 
