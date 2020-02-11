@@ -28,7 +28,7 @@ sudo apt install -y nodejs
 
 echo '----- Installing aws-cli and aws-mfa, see https://github.com/broamski/aws-mfa for help setting up ~/.aws/credentials for mfa'
 pip3 install awscli --upgrade --user
-pip3 install aws-mfa
+pip3 install aws-mfa --user
 mkdir ~/.aws
 
 echo "----- Installing Go ${GO_VER}, see https://golang.org/doc/install#install for more information"

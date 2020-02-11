@@ -1,6 +1,12 @@
 # Quick Setup scripts for a Linux development environment
 
-## Included libraries / languages in quick-setup-core.sh
+## One-line install of core tools and languages
+
+``` bash
+wget -O - https://raw.githubusercontent.com/adamstaplesdev/quick-setup/master/quick-setup-core.sh | bash
+```
+
+## Included tools and languages in quick-setup-core.sh
 
 - vim
 - python 3.6 and pip
