@@ -2,6 +2,7 @@
 
 ## Included libraries / languages in quick-setup-core.sh
 
+- vim
 - python 3.6 and pip
 - Node.js 13.x (includes npm)
 - aws-cli and aws-mfa

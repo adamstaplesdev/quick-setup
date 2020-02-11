@@ -13,10 +13,10 @@ echo "Creating download directory ${TEMPDIR}"
 mkdir -p $TEMPDIR
 
 # Setup common necessary apt packages
-echo '----- Updating apt repositories and installing common build tools'
+echo '----- Installing vim, curl and common build tools'
 sudo add-apt-repository universe
 sudo apt update
-sudo apt install -y build-essential git apt-transport-https ca-certificates curl software-properties-common
+sudo apt install -y build-essential vim git apt-transport-https ca-certificates curl software-properties-common
 
 echo '----- Installing python3 and pip3'
 sudo apt install -y python3
@@ -24,7 +24,7 @@ sudo apt install -y python3-pip
 
 echo "----- Installing Node.js ${NODE_VER} (includes npm)"
 curl -sL https://deb.nodesource.com/setup_${NODE_VER} | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt install -y nodejs
 
 echo '----- Installing aws-cli and aws-mfa, see https://github.com/broamski/aws-mfa for help setting up ~/.aws/credentials for mfa'
 pip3 install awscli --upgrade --user
@@ -40,6 +40,11 @@ echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 echo "----- Installing .NET Core ${NET_CORE_VER} sdk and Amazon.Lambda.Tools"
 sudo apt install dotnet-sdk-${NET_CORE_VER}
 dotnet new -i 'Amazon.Lambda.Templates::*'
+
+echo "----- Installing Powershell"
+wget -O - https://aka.ms/install-powershell.sh | sudo bash
+#Bug: standard folders created and owned by root, normal user will occasionally see errors. This fixes the permissions issue.
+pwsh -command '$refDir = Resolve-Path "~"; $dstDir = Resolve-Path "~/.local/share/powershell"; sudo chown -R --reference=$refDir $dstDir'
 
 echo "----- Installing Terraform ${TER_VER}"
 wget -O ${TEMPDIR}/terraform_${TER_VER}_linux_amd64.zip https://releases.hashicorp.com/terraform/${TER_VER}/terraform_${TER_VER}_linux_amd64.zip
