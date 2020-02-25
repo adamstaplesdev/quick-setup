@@ -18,14 +18,16 @@ wget -O - https://raw.githubusercontent.com/adamstaplesdev/quick-setup/master/qu
 - terraform 0.12.20
 - multipass
 
-## Included tools in quick-setup-docker.sh
+## Included tools in quick-setup-k8s.sh
 
 - Docker CE
-
-## Included tools in quick-setup-kubectl.sh
-
 - kubectl
 - kops
+
+## Included tools in quick-setup-vscode.sh
+
+- Visual Studio Code
+- A set of helpful extensions for c#, go, python, powershell, json, multi-line manipulation, etc. See file for full list of extensions.
 
 ## Configuration scripts
 
