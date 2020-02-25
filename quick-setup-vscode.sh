@@ -10,6 +10,8 @@ sudo apt install -y code
 
 echo "----- Installing VS Code extensions for language support and other useful things"
 code --install-extension ms-vscode.csharp --force
+code --install-extension k--kato.docomment --force
+code --install-extension jchannon.csharpextensions --force
 code --install-extension ms-vscode.go --force
 code --install-extension ms-python.python --force
 code --install-extension ms-vscode.powershell --force
