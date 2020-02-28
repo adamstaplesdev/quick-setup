@@ -26,6 +26,8 @@ curl -o ${TEMPDIR}/kubectl -L https://storage.googleapis.com/kubernetes-release/
 chmod +x ${TEMPDIR}/kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 echo 'alias k=kubectl' >> ~/.bashrc
+echo 'source <(kubectl completion bash)' >> ~/.bashrc
+echo 'complete -F __start_kubectl k' >> ~/.bashrc
 curl -Lo ${TEMPDIR}/kops https://github.com/kubernetes/kops/releases/download/${KOPS_VER}/kops-linux-amd64
 chmod +x ${TEMPDIR}/kops
 sudo mv ${TEMPDIR}/kops /usr/local/bin/
