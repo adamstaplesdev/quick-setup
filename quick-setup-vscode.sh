@@ -28,5 +28,6 @@ code --install-extension davidanson.vscode-markdownlint --force
 code --install-extension eg2.vscode-npm-script --force
 code --install-extension jmrog.vscode-nuget-package-manager --force
 code --install-extension mohsen1.prettify-json --force
+code --install-extension tyriar.shell-launcher --force
 
 echo '----- VS Code setup complete.'
