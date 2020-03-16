@@ -24,7 +24,7 @@ sudo systemctl enable docker
 echo "----- Installing kubectl and kops"
 curl -o ${TEMPDIR}/kubectl -L https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VER}/bin/linux/amd64/kubectl
 chmod +x ${TEMPDIR}/kubectl
-sudo mv ./kubectl /usr/local/bin/kubectl
+sudo mv ${TEMPDIR}/kubectl /usr/local/bin/kubectl
 echo 'alias k=kubectl' >> ~/.bashrc
 curl -Lo ${TEMPDIR}/kops https://github.com/kubernetes/kops/releases/download/${KOPS_VER}/kops-linux-amd64
 chmod +x ${TEMPDIR}/kops
