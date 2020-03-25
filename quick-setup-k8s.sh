@@ -11,6 +11,9 @@ TEMPDIR=~/quick-setup
 echo "Creating download directory ${TEMPDIR}"
 mkdir -p $TEMPDIR
 
+echo "----- Installing Multipass"
+snap install multipass --classic
+
 echo "----- Installing Docker for Ubuntu ${DOCKER_LTS}, as LTS has better support and frequent updates"
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
@@ -33,4 +36,4 @@ chmod +x ${TEMPDIR}/kops
 sudo mv ${TEMPDIR}/kops /usr/local/bin/
 source ~/.bashrc
 
-echo '----- Docker, kubectl, and kops setup complete.'
+echo '----- Multipass, Docker, kubectl, and kops setup complete.'
