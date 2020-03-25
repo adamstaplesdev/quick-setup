@@ -8,7 +8,7 @@ wget -O - https://raw.githubusercontent.com/adamstaplesdev/quick-setup/master/qu
 
 ## Included tools and languages in quick-setup-core.sh
 
-- vim
+- vim, gcc, g++, make, git, curl, wget
 - python 3.6 and pip
 - Node.js 13.x, npm, and yarn
 - aws-cli and aws-mfa

@@ -15,7 +15,7 @@ mkdir -p $TEMPDIR
 # Setup common necessary apt packages
 echo '----- Installing vim, curl and common build tools'
 sudo add-apt-repository universe && sudo apt update
-sudo apt install -y build-essential vim curl git wget unzip apt-transport-https ca-certificates software-properties-common bash-completion
+sudo apt install -y build-essential vim git curl wget unzip apt-transport-https ca-certificates software-properties-common bash-completion
 
 echo '----- Installing python3 and pip3'
 sudo apt install -y python3 python3-pip
