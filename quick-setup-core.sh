@@ -27,11 +27,6 @@ curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt-get update && sudo apt-get install yarn
 
-echo '----- Installing aws-cli and aws-mfa, see https://github.com/broamski/aws-mfa for help setting up ~/.aws/credentials for mfa'
-pip3 install awscli --upgrade --user
-pip3 install aws-mfa --user
-mkdir ~/.aws
-
 echo "----- Installing Go ${GO_VER}, see https://golang.org/doc/install#install for more information"
 wget -O ${TEMPDIR}/go${GO_VER}.linux-amd64.tar.gz https://dl.google.com/go/go${GO_VER}.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf ${TEMPDIR}/go${GO_VER}.linux-amd64.tar.gz

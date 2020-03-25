@@ -24,6 +24,11 @@ sudo apt install docker-ce
 sudo systemctl start docker
 sudo systemctl enable docker
 
+echo '----- Installing aws-cli and aws-mfa, see https://github.com/broamski/aws-mfa for help setting up ~/.aws/credentials for mfa'
+pip3 install awscli --upgrade --user
+pip3 install aws-mfa --user
+mkdir ~/.aws
+
 echo "----- Installing kubectl and kops"
 curl -o ${TEMPDIR}/kubectl -L https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VER}/bin/linux/amd64/kubectl
 chmod +x ${TEMPDIR}/kubectl

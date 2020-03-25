@@ -11,16 +11,16 @@ wget -O - https://raw.githubusercontent.com/adamstaplesdev/quick-setup/master/qu
 - vim, gcc, g++, make, git, curl, wget
 - python 3.6 and pip
 - Node.js 13.x, npm, and yarn
-- aws-cli and aws-mfa
 - go 1.13.7
 - dotnet-sdk-3.1 and Amazon.Lambda.Tools
 - Powershell (pwsh)
 - terraform 0.12.20
 
-## Included tools in quick-setup-k8s.sh
+## Included tools in quick-setup-cloud.sh
 
 - Multipass
 - Docker CE
+- aws-cli and aws-mfa
 - kubectl
 - kops
 
