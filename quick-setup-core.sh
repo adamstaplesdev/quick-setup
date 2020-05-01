@@ -53,7 +53,7 @@ echo '----- Loading newly-created environment variables, and cleaning up unused 
 #Cleanup: When setting up both .Net Core and Pwsh, the same package repository is registered in 2 separate files:
 #microsoft.list and microsoft-prod.list
 #Delete the duplicate to get rid of noisy warnings in apt output.
-sudo rm /etc/apt/sources.list.d/microsoft-prod.list
+sudo rm /etc/apt/sources.list.d/microsoft.list
 rm -rf ${TEMPDIR}
 source ~/.bashrc
 sudo apt update && sudo apt autoremove
