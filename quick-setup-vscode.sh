@@ -29,5 +29,14 @@ code --install-extension eg2.vscode-npm-script --force
 code --install-extension jmrog.vscode-nuget-package-manager --force
 code --install-extension mohsen1.prettify-json --force
 code --install-extension tyriar.shell-launcher --force
+code --install-extension hediet.vscode-drawio
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.remote-ssh-edit
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension esbenp.prettier-vscode
+code --install-extension tabnine.tabnine-vscode
+code --install-extension hbenl.vscode-test-explorer
+code --install-extension formulahendry.dotnet-test-explorer
 
 echo '----- VS Code setup complete.'
